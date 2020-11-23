@@ -336,7 +336,7 @@ struct chipInfo_t *getChipInfo(const char *filename, int *num, uint32_t msmversi
                     while (1) {
                         entryValid = 1;
                         for (i = 0; i < 3; i++) {
-                            tok = strtok_r(pos, " \t", &sptr);
+                            tok = strtok_r(pos, " \t>", &sptr);
                             pos = NULL;
                             if (tok != NULL) {
                                 if (*tok == '>') {
